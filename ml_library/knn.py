@@ -7,9 +7,9 @@ class KNN(BaseML):
         self.k = k
 
     def fit(self, X, y):
-        print("fit")
+        self.X_train = X
+        self.y_train = y
         pass
 
     def predict(self, X):
-        print("predict")
         pass
