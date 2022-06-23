@@ -1,7 +1,4 @@
-import sys
 import pytest
-
-sys.path.insert(0, "../")
 
 from ml_library.knn import KNN
 from sklearn.datasets import load_iris
