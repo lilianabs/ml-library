@@ -1,4 +1,4 @@
-from base_class import BaseML
+from ml_library.base_class import BaseML
 
 class KNN(BaseML):
 
