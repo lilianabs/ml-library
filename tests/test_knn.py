@@ -6,8 +6,8 @@ from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
 
 from ml_library.knn import KNN
-from ml_library.utils import accuracy
-from ml_library.utils import root_mean_squared_error
+from ml_library.metrics import accuracy
+from ml_library.metrics import root_mean_squared_error
 
 sys.path.insert(0, "../ml_library/")
 

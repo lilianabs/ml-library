@@ -2,7 +2,7 @@ import numpy as np
 
 from collections import Counter
 from .base_class import BaseML
-from .utils import euclidean_distance
+from .distances import euclidean_distance
 
 
 class KNN(BaseML):
