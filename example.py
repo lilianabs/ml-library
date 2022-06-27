@@ -36,8 +36,8 @@ def test_regression():
         X, y, test_size=0.2, random_state=1
     )
 
-    knn = KNN(k=3, regression=False)
-    knn.fit(X_train, y_test)
+    knn = KNN(k=3)
+    knn.fit(X_train, y_train)
     predictions = knn.predict(X_test)
 
     rmse = root_mean_squared_error(predictions, y_test)

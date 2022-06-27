@@ -9,7 +9,7 @@ class KNN(BaseML):
     def __init__(self, k=3, regression=True):
         super().__init__()
         self.k = k
-        self.regression = True
+        self.regression = regression
 
     def fit(self, X, y):
         self.X_train = X
