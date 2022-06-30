@@ -1,9 +1,20 @@
-from ml_library.knn import KNN
-from ml_library.metrics import accuracy
-from ml_library.metrics import root_mean_squared_error
+import sys
+import os
+from pathlib import Path
 from sklearn.datasets import load_iris
 from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
+
+current_dir = os.getcwd()
+sys.path.append(current_dir)
+
+path = Path(current_dir)
+a = str(path.parent.absolute())
+sys.path.append(a)
+
+from ml_library.knn import KNN  # noqa: E402
+from ml_library.metrics import accuracy  # noqa: E402
+from ml_library.metrics import root_mean_squared_error  # noqa: E402
 
 
 def test_classification():
